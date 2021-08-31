@@ -1,10 +1,10 @@
-##masonry.js介绍
+## masonry.js介绍
 
 - 一款响应式瀑布流插件，模式为等宽不等高，可根据用户输入参数自动布局，并且随着浏览器页面变化内容布局也随之变化。
 - 经测试支持Chrome和Safari浏览器
 - 用户可自行下载压缩版和非压缩版js文件
 
-##插件使用介绍
+## 插件使用介绍
 
 1. 下载masonry.js或masonry.min.js至文件根目录下
 
@@ -32,13 +32,13 @@ new Masonry(boxs, '.masonry', 200, 10, 10); // 参数完整写法
 
 5. 打开浏览器就能看到盒子已经完成瀑布流布局了
 
-##插件调用
+## 插件调用
 
-###调用格式
+### 调用格式
 ```
 new Masonry(boxs, className, [boxWidth, padding, gap]); // 中括号内的参数可省略
 ```
-###参数介绍
+### 参数介绍
 
 |  参数   | 数据类型  |  是否必填   | 默认值  | 说明 |
 |  ----  | ----  |  ----  | ----  | --- |
@@ -48,7 +48,7 @@ new Masonry(boxs, className, [boxWidth, padding, gap]); // 中括号内的参数
 | padding  | number | 否  | 10 | 单位px,内边距不能大于盒子的一半宽度
 | gap  | number | 否  | 10 | 单位px,每个盒子之间的缝隙
 
-###插件使用示例
+### 插件使用示例
 
 ```html
 <head>
@@ -91,26 +91,26 @@ new Masonry(boxs, className, [boxWidth, padding, gap]); // 中括号内的参数
         for (let i = 0, num = 50, len = seedUrl.length; i < num; i++) { // 生成50张图片
             // 注意 最外层的盒子不要添加高度
             let box = document.createElement('div'),
-				img = document.createElement('img'), 
-				footer = document.createElement('div');
+		img = document.createElement('img'), 
+		footer = document.createElement('div');
             new Element(box).css({
-				'position': 'relative',
-				'width': '400px', 
-				'border-radius': '5px' 
-			})
+		'position': 'relative',
+		'width': '400px', 
+		'border-radius': '5px' 
+	    })
             new Element(img).css({ 
-				'width': '100%', 
-				'border-radius': '3px'
-			})
+		'width': '100%', 
+		'border-radius': '3px'
+	    })
             new Element(footer).css({ 
-				'width': '100%', 
-				'height': '20px', 
-				'background-color': 'rgba(0, 0, 0, .3)', 
-				'color': '#fff', 
-				'text-align': 'center', 
-				'line-height': '20px', 
-				'border-radius': '3px'
-			})
+		'width': '100%', 
+		'height': '20px', 
+		'background-color': 'rgba(0, 0, 0, .3)', 
+		'color': '#fff', 
+		'text-align': 'center', 
+		'line-height': '20px', 
+		'border-radius': '3px'
+	    })
             footer.innerHTML = '图' + (i + 1);
             img.src = seedUrl[Math.floor(Math.random() * num) % len];
             // 可自行添加addEventListener事件 否则使用默认样式
