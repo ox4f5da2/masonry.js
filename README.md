@@ -123,3 +123,7 @@ new Masonry(boxs, className, [boxWidth, padding, gap]); // 中括号内的参数
         new Masonry(boxs, '.masonry');
     </script>
 ```
+
+## LICENSE
+
+[Apache License 2.0](https://github.com/ox4f5da2/masonry.js/blob/main/LICENSE) &copy; ox4f5da2
