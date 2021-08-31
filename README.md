@@ -7,13 +7,13 @@
 ![](https://img.shields.io/badge/author-oxf5da2-orange) ![](https://img.shields.io/badge/version-1.0.0-green) ![](https://img.shields.io/badge/publish-2021--8--31-yellow) ![](https://img.shields.io/badge/size-4kb%2F8kb-important) ![](https://img.shields.io/badge/support-chrome%2Fsafari-informational)
 
 ## 文档目录
-+ 背景介绍
-+ 插件的使用介绍
-+ 插件调用
-- 调用格式
-- 参数介绍
--  插件使用示例
-+ LICENSE
+- 背景介绍
+- 插件的使用介绍
+- 插件调用
+  - 调用格式
+  - 参数介绍
+  -  插件使用示例
+- LICENSE
 
 ## 背景介绍
 为什么要写这个瀑布流插件呢？这是因为最近我看到B站里有个UP主发的讲解JS插件的开发视频，视频里他做的是表格渲染的插件开发，因此我收到启发就打算尝试写一个属于自己的插件。想到学Javascript的时候写过一个瀑布流布局，因此我就想把瀑布流布局功能做成一个插件，并命名为Masonry.js
