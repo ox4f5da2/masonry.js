@@ -8,7 +8,7 @@
 
 ## 插件使用介绍
 
-1. 下载[masonry.js](https://github.com/ox4f5da2/masonry.js.git/masonry.js)或masonry.min.js至文件根目录下
+1. 选择下载[masonry.js](https://github.com/ox4f5da2/masonry.js/blob/main/masonry.js/masonry.js)或[masonry.min.js](https://github.com/ox4f5da2/masonry.js/blob/main/masonry.js/masonry.min.js)二者之一至文件根目录下
 
 2. 在html文件中的head标签内引入js文件
 ```html
