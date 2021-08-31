@@ -4,6 +4,8 @@
 - 经测试支持Chrome和Safari浏览器
 - 可自行下载压缩版和非压缩版js文件
 
+![](https://img.shields.io/badge/author-oxf5da2-orange) ![](https://img.shields.io/badge/version-1.0.0-green) ![](https://img.shields.io/badge/publish-2021--8--31-yellow) ![](https://img.shields.io/badge/size-4kb%2F8kb-important) ![](https://img.shields.io/badge/support-chrome%2Fsafari-informational)
+
 ## 插件使用介绍
 
 1. 下载masonry.js或masonry.min.js至文件根目录下
