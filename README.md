@@ -1,10 +1,22 @@
 # masonry.js介绍
 
-- 一款响应式瀑布流插件，模式为等宽不等高，可根据用户输入的参数自动布局，并且随着浏览器页面宽度的变化布局也随之变化。
+- 一款响应式瀑布流插件，模式为等宽不等高，可根据用户输入的参数自动布局，并且随着浏览器页面宽度的变化布局也随之变化
 - 经测试支持Chrome和Safari浏览器
 - 可自行下载压缩版和非压缩版js文件
 
 ![](https://img.shields.io/badge/author-oxf5da2-orange) ![](https://img.shields.io/badge/version-1.0.0-green) ![](https://img.shields.io/badge/publish-2021--8--31-yellow) ![](https://img.shields.io/badge/size-4kb%2F8kb-important) ![](https://img.shields.io/badge/support-chrome%2Fsafari-informational)
+
+## 文档目录
+- 背景介绍
+- 插件的使用介绍
+- 插件调用
+ - 调用格式
+ - 参数介绍
+ -  插件使用示例
+- LICENSE
+
+## 背景介绍
+为什么要写这个瀑布流插件呢？这是因为最近我看到B站里有个UP主发的讲解JS插件的开发视频，视频里他做的是表格渲染的插件开发，因此我收到启发就打算尝试写一个属于自己的插件。想到学Javascript的时候写过一个瀑布流布局，因此我就想把瀑布流布局功能做成一个插件，并命名为Masonry.js
 
 ## 插件使用介绍
 
@@ -14,7 +26,7 @@
 ```html
 <script src="./masonry.min.js"></script>
 ```
-3. 使用 HTML 或者 JavaScript 生成需要进行瀑布流布局的盒子，并用 JavaScript 获取到所有元素节点，即 NodeList 类数组
+3. 使用 HTML标签 或者 JavaScript的`document.createElement`生成需要进行瀑布流布局的盒子，并用 JavaScript 的 `document.querySelectorAll()` 获取到所有元素节点，即获取到 NodeList 类数组，例如：
 ```js
 var div = document.querySelectorAll('.masonry>div'); 
 ```
@@ -23,7 +35,7 @@ var div = document.querySelectorAll('.masonry>div');
 NodeList(5) [div, div, div, div, div]
 ```
 
-4. 在script标签内新建Masonry对象来使用瀑布流插件
+4. 在 `<script></script>` 标签内新建Masonry对象来使用瀑布流插件
 ```js
 new Masonry(boxs, '.masonry'); // 参数省略写法
 ```
@@ -32,7 +44,7 @@ new Masonry(boxs, '.masonry'); // 参数省略写法
 new Masonry(boxs, '.masonry', 200, 10, 10); // 参数完整写法
 ```
 
-5. 打开浏览器就能看到盒子已经完成瀑布流布局了
+5. 打开Chrome或Safari浏览器就能看到盒子已经完成瀑布流布局了
 
 ## 插件调用
 
